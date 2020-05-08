@@ -1,3 +1,92 @@
+<html lang="en"><head>
+<meta charset="UTF-8">
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+<title>CodePen - Bongo Cat Codes #2 - Jamming</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<style>
+:root {
+  --bg: #1a1e2d;
+  --green: #a5ea9b;
+  --pink: #ff61d8;
+  --blue: #569cfa;
+  --orange: #ffcc81;
+  --cyan: #7ed1e2;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: var(--bg);
+  display: -webkit-box;
+  display: flex;
+  place-content: center;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+
+.container {
+  width: 80vw;
+  height: 80vh;
+}
+.container svg {
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+}
+
+#bongo-cat {
+  fill: var(--bg);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 4;
+}
+#bongo-cat .laptop-cover,
+#bongo-cat .headphone .band {
+  fill: none;
+}
+#bongo-cat .paw, #bongo-cat .head {
+  stroke: var(--orange);
+}
+#bongo-cat .laptop-keyboard {
+  stroke-width: 2;
+}
+#bongo-cat .terminal-code {
+  stroke-width: 5;
+}
+#bongo-cat .music .note,
+#bongo-cat .laptop-base,
+#bongo-cat .laptop-cover,
+#bongo-cat .paw .pads {
+  stroke: var(--pink);
+}
+#bongo-cat .table line,
+#bongo-cat .headphone .band,
+#bongo-cat .headphone .speaker path:nth-child(3) {
+  stroke: var(--green);
+}
+#bongo-cat .terminal-frame,
+#bongo-cat .laptop-keyboard,
+#bongo-cat .headphone .speaker path:nth-child(2) {
+  stroke: var(--blue);
+}
+#bongo-cat .terminal-code,
+#bongo-cat .headphone .speaker path:first-child {
+  stroke: var(--cyan);
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
 <div class="container">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 785.5 465.8">
 <g id="bongo-cat">
@@ -16,7 +105,7 @@
 </g>
 </g>
 <g class="music music-right">
-<g class="note" data-svg-origin="350.79998779296875 46.5" transform="matrix(0.99452,0.10453,-0.10453,0.99452,-59.21697,-250.4143)" style="transform-origin: 0px 0px; opacity: 0; visibility: hidden; stroke: rgb(126, 209, 226);">
+<g class="note" data-svg-origin="350.79998779296875 46.5" transform="matrix(0.98481,-0.17365,0.17365,0.98481,-26.74607,-146.37725)" style="transform-origin: 0px 0px; opacity: 0; visibility: hidden; stroke: rgb(163, 164, 236);">
 <g>
 <path d="M368.5,46.5c.5,2.1,1.2,3.5,3.8,6.3s5.1,4.3,6.5,7.2a11.1,11.1,0,0,1,.7,2,10.5,10.5,0,0,1-.7,6.5"></path>
 <path d="M368.5,46.5a20.8,20.8,0,0,0,2.4,11.7c2.3,4.4,5,5.4,6.8,9.5a17.5,17.5,0,0,1,.4,11"></path>
@@ -30,7 +119,7 @@
 <path d="M368.5,92.8c.1-3.1-4.7-6.3-9-6.3s-8.7,2.7-8.7,5.8,4.8,5.7,8.7,5.8S368.3,95.8,368.5,92.8Z"></path>
 </g>
 </g>
-<g class="note" data-svg-origin="332.5986633300781 43.5" transform="matrix(0.99985,-0.01745,0.01745,0.99985,-41.70919,-208.18963)" style="transform-origin: 0px 0px; opacity: 0; visibility: hidden; stroke: rgb(165, 234, 155);">
+<g class="note" data-svg-origin="332.5986633300781 43.5" transform="matrix(0,0,0,0,356.59866,43.5)" style="transform-origin: 0px 0px; opacity: 1; visibility: inherit; stroke: rgb(255, 204, 129);">
 <g>
 <polyline points="350 81.7 350 43.5 382.7 50.7 382.7 89.5"></polyline>
 <path d="M350,82.3c0-3.1-4.5-5.7-8.2-5.9s-9.3,2.8-9.2,6,4.7,5.7,8.6,5.7S349.9,85.5,350,82.3Z"></path>
@@ -42,14 +131,14 @@
 <path d="M382.7,89.9c0-3.1-4.4-5.7-8.2-5.8s-9.3,2.7-9.2,5.9,4.7,5.7,8.7,5.7S382.7,93.1,382.7,89.9Z"></path>
 </g>
 </g>
-<g class="note" data-svg-origin="337.4986267089844 34.599998474121094" transform="matrix(0,0,0,0,340.49863,34.6)" style="transform-origin: 0px 0px; opacity: 1; visibility: inherit; stroke: rgb(163, 164, 236);">
+<g class="note" data-svg-origin="337.4986267089844 34.599998474121094" transform="matrix(0.1112,0.07726,-0.07726,0.1112,291.41448,-24.97087)" style="transform-origin: 0px 0px; opacity: 0.8646; visibility: inherit; stroke: rgb(126, 209, 226);">
 <polyline points="388.2 73.6 388.2 34.6 354.9 42.6 354.9 82.4"></polyline>
 <path d="M388.2,74.1c0-3-4.4-5.6-8.1-5.8s-9.2,2.8-9.1,6,4.6,5.6,8.6,5.6S388.2,77.3,388.2,74.1Z"></path>
 <path d="M354.9,81.9c0-3.1-4.4-5.7-8.2-5.9s-9.3,2.8-9.2,6,4.7,5.7,8.7,5.7S354.9,85.1,354.9,81.9Z"></path>
 <line x1="354.9" y1="48.4" x2="388.2" y2="40.3"></line>
 <line x1="354.9" y1="54.6" x2="388.2" y2="47"></line>
 </g>
-<g class="note" data-svg-origin="354.29864501953125 33.29999923706055" transform="matrix(0,0,0,0,351.29865,33.3)" style="transform-origin: 0px 0px; opacity: 1; visibility: inherit; stroke: rgb(163, 164, 236);">
+<g class="note" data-svg-origin="354.29864501953125 33.29999923706055" transform="matrix(0.97437,0.22495,-0.22495,0.97437,-43.42849,-290.846)" style="transform-origin: 0px 0px; opacity: 0; visibility: hidden; stroke: rgb(163, 164, 236);">
 <g>
 <path d="M371.8,79.5c0-3.1-4.5-5.8-8.3-5.9s-9.3,2.8-9.2,6,4.7,5.7,8.7,5.7S371.8,82.7,371.8,79.5Z"></path>
 <line x1="371.8" y1="79.5" x2="371.8" y2="33.3"></line>
@@ -61,7 +150,7 @@
 <path d="M371.8,33.4a26.6,26.6,0,0,0,3.6,7.8c3.7,5.7,7.6,7,8.8,11.6.5,1.7.7,4.4-.9,8.3"></path>
 </g>
 </g>
-<g class="note" data-svg-origin="350.79998779296875 46.5" transform="matrix(0.6114,-0.47103,0.47103,0.6114,59.36988,18.13452)" style="transform-origin: 0px 0px; opacity: 0.2282; visibility: inherit; stroke: rgb(255, 97, 216);">
+<g class="note" data-svg-origin="350.79998779296875 46.5" transform="matrix(0.32557,-0.94552,0.94552,0.32557,159.62336,155.0494)" style="transform-origin: 0px 0px; opacity: 0; visibility: hidden; stroke: rgb(126, 209, 226);">
 <g>
 <path d="M368.5,46.5c.5,2.1,1.2,3.5,3.8,6.3s5.1,4.3,6.5,7.2a11.1,11.1,0,0,1,.7,2,10.5,10.5,0,0,1-.7,6.5"></path>
 <path d="M368.5,46.5a20.8,20.8,0,0,0,2.4,11.7c2.3,4.4,5,5.4,6.8,9.5a17.5,17.5,0,0,1,.4,11"></path>
@@ -74,7 +163,7 @@
 <line x1="368.5" y1="47.7" x2="368.5" y2="92.8"></line>
 <path d="M368.5,92.8c.1-3.1-4.7-6.3-9-6.3s-8.7,2.7-8.7,5.8,4.8,5.7,8.7,5.8S368.3,95.8,368.5,92.8Z"></path>
 </g>
-</g><g class="note" data-svg-origin="350.79998779296875 46.5" transform="matrix(0.99985,-0.01745,0.01745,0.99985,69.24119,-199.87157)" style="transform-origin: 0px 0px; opacity: 0; visibility: hidden; stroke: rgb(255, 97, 216);">
+</g><g class="note" data-svg-origin="350.79998779296875 46.5" transform="matrix(0,0,0,0,372.79999,46.5)" style="transform-origin: 0px 0px; opacity: 1; visibility: inherit; stroke: rgb(255, 204, 129);">
 <g>
 <path d="M368.5,46.5c.5,2.1,1.2,3.5,3.8,6.3s5.1,4.3,6.5,7.2a11.1,11.1,0,0,1,.7,2,10.5,10.5,0,0,1-.7,6.5"></path>
 <path d="M368.5,46.5a20.8,20.8,0,0,0,2.4,11.7c2.3,4.4,5,5.4,6.8,9.5a17.5,17.5,0,0,1,.4,11"></path>
@@ -87,7 +176,7 @@
 <line x1="368.5" y1="47.7" x2="368.5" y2="92.8"></line>
 <path d="M368.5,92.8c.1-3.1-4.7-6.3-9-6.3s-8.7,2.7-8.7,5.8,4.8,5.7,8.7,5.8S368.3,95.8,368.5,92.8Z"></path>
 </g>
-</g><g class="note" data-svg-origin="332.5986633300781 43.5" transform="matrix(0.571,0.04896,-0.04896,0.571,173.17789,-115.68423)" style="transform-origin: 0px 0px; opacity: 0.4269; visibility: inherit; stroke: rgb(165, 234, 155);">
+</g><g class="note" data-svg-origin="332.5986633300781 43.5" transform="matrix(0,0,0,0,311.59866,43.5)" style="transform-origin: 0px 0px; opacity: 1; visibility: inherit; stroke: rgb(86, 156, 250);">
 <g>
 <polyline points="350 81.7 350 43.5 382.7 50.7 382.7 89.5"></polyline>
 <path d="M350,82.3c0-3.1-4.5-5.7-8.2-5.9s-9.3,2.8-9.2,6,4.7,5.7,8.6,5.7S349.9,85.5,350,82.3Z"></path>
@@ -98,7 +187,7 @@
 <path d="M350,82.3c0-3.1-4.5-5.7-8.2-5.9s-9.3,2.8-9.2,6,4.7,5.7,8.6,5.7S349.9,85.5,350,82.3Z"></path>
 <path d="M382.7,89.9c0-3.1-4.4-5.7-8.2-5.8s-9.3,2.7-9.2,5.9,4.7,5.7,8.7,5.7S382.7,93.1,382.7,89.9Z"></path>
 </g>
-</g><g class="note" data-svg-origin="332.5986633300781 43.5" transform="matrix(0.06143,-0.03008,0.03008,0.06143,331.55115,36.06226)" style="transform-origin: 0px 0px; opacity: 0.9316; visibility: inherit; stroke: rgb(163, 164, 236);">
+</g><g class="note" data-svg-origin="332.5986633300781 43.5" transform="matrix(0.35051,-0.18212,0.18212,0.35051,212.50729,5.08568)" style="transform-origin: 0px 0px; opacity: 0.605; visibility: inherit; stroke: rgb(253, 124, 110);">
 <g>
 <polyline points="350 81.7 350 43.5 382.7 50.7 382.7 89.5"></polyline>
 <path d="M350,82.3c0-3.1-4.5-5.7-8.2-5.9s-9.3,2.8-9.2,6,4.7,5.7,8.6,5.7S349.9,85.5,350,82.3Z"></path>
@@ -109,19 +198,19 @@
 <path d="M350,82.3c0-3.1-4.5-5.7-8.2-5.9s-9.3,2.8-9.2,6,4.7,5.7,8.6,5.7S349.9,85.5,350,82.3Z"></path>
 <path d="M382.7,89.9c0-3.1-4.4-5.7-8.2-5.8s-9.3,2.7-9.2,5.9,4.7,5.7,8.7,5.7S382.7,93.1,382.7,89.9Z"></path>
 </g>
-</g><g class="note" data-svg-origin="337.4986267089844 34.599998474121094" transform="matrix(0.03959,0.04823,-0.04823,0.03959,347.67781,4.09103)" style="transform-origin: 0px 0px; opacity: 0.9376; visibility: inherit; stroke: rgb(255, 204, 129);">
+</g><g class="note" data-svg-origin="337.4986267089844 34.599998474121094" transform="matrix(0.33846,-0.12265,0.12265,0.33846,178.46515,-14.55651)" style="transform-origin: 0px 0px; opacity: 0.64; visibility: inherit; stroke: rgb(165, 234, 155);">
 <polyline points="388.2 73.6 388.2 34.6 354.9 42.6 354.9 82.4"></polyline>
 <path d="M388.2,74.1c0-3-4.4-5.6-8.1-5.8s-9.2,2.8-9.1,6,4.6,5.6,8.6,5.6S388.2,77.3,388.2,74.1Z"></path>
 <path d="M354.9,81.9c0-3.1-4.4-5.7-8.2-5.9s-9.3,2.8-9.2,6,4.7,5.7,8.7,5.7S354.9,85.1,354.9,81.9Z"></path>
 <line x1="354.9" y1="48.4" x2="388.2" y2="40.3"></line>
 <line x1="354.9" y1="54.6" x2="388.2" y2="47"></line>
-</g><g class="note" data-svg-origin="337.4986267089844 34.599998474121094" transform="matrix(0.56904,0.59942,-0.59942,0.56904,214.20804,-357.65431)" style="transform-origin: 0px 0px; opacity: 0.1735; visibility: inherit; stroke: rgb(86, 156, 250);">
+</g><g class="note" data-svg-origin="337.4986267089844 34.599998474121094" transform="matrix(0,0,0,0,357.49863,34.6)" style="transform-origin: 0px 0px; opacity: 1; visibility: inherit; stroke: rgb(126, 209, 226);">
 <polyline points="388.2 73.6 388.2 34.6 354.9 42.6 354.9 82.4"></polyline>
 <path d="M388.2,74.1c0-3-4.4-5.6-8.1-5.8s-9.2,2.8-9.1,6,4.6,5.6,8.6,5.6S388.2,77.3,388.2,74.1Z"></path>
 <path d="M354.9,81.9c0-3.1-4.4-5.7-8.2-5.9s-9.3,2.8-9.2,6,4.7,5.7,8.7,5.7S354.9,85.1,354.9,81.9Z"></path>
 <line x1="354.9" y1="48.4" x2="388.2" y2="40.3"></line>
 <line x1="354.9" y1="54.6" x2="388.2" y2="47"></line>
-</g><g class="note" data-svg-origin="354.29864501953125 33.29999923706055" transform="matrix(0.81915,-0.57358,0.57358,0.81915,11.9747,-4.75908)" style="transform-origin: 0px 0px; opacity: 0; visibility: hidden; stroke: rgb(103, 181, 192);">
+</g><g class="note" data-svg-origin="354.29864501953125 33.29999923706055" transform="matrix(0.10709,-0.01682,0.01682,0.10709,317.134,13.13871)" style="transform-origin: 0px 0px; opacity: 0.8916; visibility: inherit; stroke: rgb(126, 209, 226);">
 <g>
 <path d="M371.8,79.5c0-3.1-4.5-5.8-8.3-5.9s-9.3,2.8-9.2,6,4.7,5.7,8.7,5.7S371.8,82.7,371.8,79.5Z"></path>
 <line x1="371.8" y1="79.5" x2="371.8" y2="33.3"></line>
@@ -132,7 +221,7 @@
 <line x1="371.8" y1="79.5" x2="371.8" y2="33.3"></line>
 <path d="M371.8,33.4a26.6,26.6,0,0,0,3.6,7.8c3.7,5.7,7.6,7,8.8,11.6.5,1.7.7,4.4-.9,8.3"></path>
 </g>
-</g><g class="note" data-svg-origin="354.29864501953125 33.29999923706055" transform="matrix(0.28524,0.1408,-0.1408,0.28524,259.56154,-91.62054)" style="transform-origin: 0px 0px; opacity: 0.6819; visibility: inherit; stroke: rgb(253, 124, 110);">
+</g><g class="note" data-svg-origin="354.29864501953125 33.29999923706055" transform="matrix(0,0,0,0,340.29865,33.3)" style="transform-origin: 0px 0px; opacity: 1; visibility: inherit; stroke: rgb(163, 164, 236);">
 <g>
 <path d="M371.8,79.5c0-3.1-4.5-5.8-8.3-5.9s-9.3,2.8-9.2,6,4.7,5.7,8.7,5.7S371.8,82.7,371.8,79.5Z"></path>
 <line x1="371.8" y1="79.5" x2="371.8" y2="33.3"></line>
@@ -193,16 +282,16 @@
 <line x1="203.4" y1="137.2" x2="180.4" y2="134.3" style="stroke-dashoffset: 0; stroke-dasharray: none;"></line>
 <line x1="169.3" y1="132.9" x2="155.1" y2="131.1" style="stroke-dashoffset: 0; stroke-dasharray: 15.3136px, 25.3136px;"></line>
 <line x1="264.7" y1="158.3" x2="221.9" y2="152.1" style="stroke-dashoffset: 0; stroke-dasharray: none;"></line>
-<line x1="208.2" y1="150.1" x2="191.7" y2="147.7" style="stroke-dashoffset: 2.8278; stroke-dasharray: 17.6736px, 27.6736px;"></line>
-<line x1="291.3" y1="174.3" x2="268.8" y2="170.9" style="stroke-dashoffset: 24.7555; stroke-dasharray: 0px, 999999px;"></line>
-<line x1="257.8" y1="169.2" x2="226.5" y2="164.4" style="stroke-dashoffset: 33.6659; stroke-dasharray: 0px, 999999px;"></line>
-<line x1="217.3" y1="163" x2="185" y2="158.1" style="stroke-dashoffset: 34.6696; stroke-dasharray: 0px, 999999px;"></line>
-<line x1="173.8" y1="156.4" x2="152.9" y2="153.2" style="stroke-dashoffset: 23.1436; stroke-dasharray: 0px, 999999px;"></line>
-<line x1="278.5" y1="185.6" x2="257.3" y2="182.2" style="stroke-dashoffset: 23.4709; stroke-dasharray: 0px, 999999px;"></line>
-<line x1="243.8" y1="179.9" x2="230.3" y2="177.7" style="stroke-dashoffset: 15.6781; stroke-dasharray: 0px, 999999px;"></line>
-<line x1="216.5" y1="175.8" x2="196.7" y2="172.5" style="stroke-dashoffset: 22.0731; stroke-dasharray: 0px, 999999px;"></line>
-<line x2="262.1" y2="196.1" x1="280.5" y1="199.2" style="stroke-dashoffset: 20.6593; stroke-dasharray: 0px, 999999px;"></line>
-<line x2="213.8" y2="187.9" x1="251.1" y1="194.2" style="stroke-dashoffset: 39.8283; stroke-dasharray: 0px, 999999px;"></line>
+<line x1="208.2" y1="150.1" x2="191.7" y2="147.7" style="stroke-dashoffset: 0; stroke-dasharray: none;"></line>
+<line x1="291.3" y1="174.3" x2="268.8" y2="170.9" style="stroke-dashoffset: 0; stroke-dasharray: none;"></line>
+<line x1="257.8" y1="169.2" x2="226.5" y2="164.4" style="stroke-dashoffset: 0; stroke-dasharray: none;"></line>
+<line x1="217.3" y1="163" x2="185" y2="158.1" style="stroke-dashoffset: 0; stroke-dasharray: none;"></line>
+<line x1="173.8" y1="156.4" x2="152.9" y2="153.2" style="stroke-dashoffset: 0; stroke-dasharray: none;"></line>
+<line x1="278.5" y1="185.6" x2="257.3" y2="182.2" style="stroke-dashoffset: 0; stroke-dasharray: none;"></line>
+<line x1="243.8" y1="179.9" x2="230.3" y2="177.7" style="stroke-dashoffset: 0; stroke-dasharray: none;"></line>
+<line x1="216.5" y1="175.8" x2="196.7" y2="172.5" style="stroke-dashoffset: 0; stroke-dasharray: none;"></line>
+<line x2="262.1" y2="196.1" x1="280.5" y1="199.2" style="stroke-dashoffset: 0; stroke-dasharray: none;"></line>
+<line x2="213.8" y2="187.9" x1="251.1" y1="194.2" style="stroke-dashoffset: 28.3447; stroke-dasharray: 38.8283px, 48.8283px;"></line>
 <line x2="180.8" y2="182.3" x1="202.7" y1="186" style="stroke-dashoffset: 24.2104; stroke-dasharray: 0px, 999999px;"></line>
 </g>
 <polygon class="laptop-cover" points="103.2 263.6 452.1 339 360.8 12.4 2 2 103.2 263.6"></polygon>
@@ -227,7 +316,7 @@
 <path class="band" d="M638.9,157.7c-4-16.8-25.9-61.9-75.3-95.3A155.5,155.5,0,0,0,515,40.6"></path>
 </g>
 <g class="music music-left">
-<g class="note" data-svg-origin="615.699951171875 119.9000015258789" transform="matrix(0.71934,-0.69466,0.69466,0.71934,26.51261,247.35326)" style="transform-origin: 0px 0px; opacity: 0; visibility: hidden; stroke: rgb(165, 234, 155);">
+<g class="note" data-svg-origin="615.699951171875 119.9000015258789" transform="matrix(0.3641,0.00107,-0.00107,0.3641,400.99389,-0.15549)" style="transform-origin: 0px 0px; opacity: 0.6359; visibility: inherit; stroke: rgb(103, 181, 192);">
 <g>
 <path d="M633.3,119.9c.6,2,1.3,3.5,3.8,6.3s5.2,4.3,6.5,7.2a6.9,6.9,0,0,1,.7,1.9,10.2,10.2,0,0,1-.7,6.6"></path>
 <path d="M633.3,119.9a23,23,0,0,0,2.4,11.7c2.4,4.3,5.1,5.4,6.8,9.5a16.9,16.9,0,0,1,.5,11"></path>
@@ -241,7 +330,7 @@
 <path d="M633.3,166.2c.2-3.2-4.6-6.3-8.9-6.3s-8.7,2.6-8.7,5.7,4.7,5.7,8.7,5.8S633.1,169.2,633.3,166.2Z"></path>
 </g>
 </g>
-<g class="note" data-svg-origin="597.3999633789062 116.80000305175781" transform="matrix(0,0,0,0,606.39996,116.8)" style="transform-origin: 0px 0px; opacity: 1; visibility: inherit; stroke: rgb(126, 209, 226);">
+<g class="note" data-svg-origin="597.3999633789062 116.80000305175781" transform="matrix(0.74042,-0.52455,0.52455,0.74042,41.69334,151.3089)" style="transform-origin: 0px 0px; opacity: 0.0926; visibility: inherit; stroke: rgb(165, 234, 155);">
 <g>
 <polyline points="614.8 155 614.8 116.8 647.5 124 647.5 162.9"></polyline>
 <path d="M614.8,155.7c0-3.1-4.4-5.7-8.2-5.9s-9.2,2.8-9.2,6,4.7,5.6,8.7,5.6S614.8,158.8,614.8,155.7Z"></path>
@@ -253,14 +342,14 @@
 <path d="M647.5,163.3c.1-3.1-4.4-5.7-8.2-5.9s-9.2,2.8-9.1,6,4.7,5.7,8.6,5.7S647.5,166.5,647.5,163.3Z"></path>
 </g>
 </g>
-<g class="note" data-svg-origin="595.7986450195312 109.4000015258789" transform="matrix(0,0,0,0,615.79865,109.4)" style="transform-origin: 0px 0px; opacity: 1; visibility: inherit; stroke: rgb(163, 164, 236);">
+<g class="note" data-svg-origin="595.7986450195312 109.4000015258789" transform="matrix(0.99619,-0.08716,0.08716,0.99619,-54.26531,-159.65338)" style="transform-origin: 0px 0px; opacity: 0; visibility: hidden; stroke: rgb(253, 124, 110);">
 <polyline points="646.5 148.5 646.5 109.4 613.2 117.4 613.2 157.2"></polyline>
 <path d="M646.5,149c0-3.1-4.4-5.7-8.1-5.8s-9.2,2.7-9.1,5.9,4.7,5.6,8.6,5.6S646.5,152.1,646.5,149Z"></path>
 <path d="M613.2,156.7c.1-3.1-4.4-5.7-8.2-5.8s-9.3,2.7-9.2,6,4.7,5.6,8.7,5.6S613.2,159.9,613.2,156.7Z"></path>
 <line x1="613.2" y1="123.2" x2="646.5" y2="115.1"></line>
 <line x1="613.2" y1="129.4" x2="646.5" y2="121.8"></line>
 </g>
-<g class="note" data-svg-origin="619.0999755859375 106.5999984741211" transform="matrix(0.98769,-0.15643,0.15643,0.98769,-47.05432,-115.84194)" style="transform-origin: 0px 0px; opacity: 0; visibility: hidden; stroke: rgb(253, 124, 110);">
+<g class="note" data-svg-origin="619.0999755859375 106.5999984741211" transform="matrix(0.60493,0.13172,-0.13172,0.60493,247.00728,-168.20929)" style="transform-origin: 0px 0px; opacity: 0.3809; visibility: inherit; stroke: rgb(165, 234, 155);">
 <g>
 <path d="M636.6,152.9c0-3.2-4.4-5.8-8.2-5.9s-9.3,2.8-9.3,6,4.8,5.7,8.7,5.7S636.6,156.1,636.6,152.9Z"></path>
 <line x1="636.6" y1="152.9" x2="636.6" y2="106.6"></line>
@@ -272,7 +361,7 @@
 <path d="M636.6,106.8a33.2,33.2,0,0,0,3.6,7.8c3.8,5.7,7.6,6.9,8.9,11.5a13.3,13.3,0,0,1-.9,8.4"></path>
 </g>
 </g>
-<g class="note" data-svg-origin="615.699951171875 119.9000015258789" transform="matrix(0,0,0,0,604.69995,119.9)" style="transform-origin: 0px 0px; opacity: 1; visibility: inherit; stroke: rgb(163, 164, 236);">
+<g class="note" data-svg-origin="615.699951171875 119.9000015258789" transform="matrix(0.51401,-0.39998,0.39998,0.51401,230.91032,166.45487)" style="transform-origin: 0px 0px; opacity: 0.3487; visibility: inherit; stroke: rgb(126, 209, 226);">
 <g>
 <path d="M633.3,119.9c.6,2,1.3,3.5,3.8,6.3s5.2,4.3,6.5,7.2a6.9,6.9,0,0,1,.7,1.9,10.2,10.2,0,0,1-.7,6.6"></path>
 <path d="M633.3,119.9a23,23,0,0,0,2.4,11.7c2.4,4.3,5.1,5.4,6.8,9.5a16.9,16.9,0,0,1,.5,11"></path>
@@ -285,7 +374,7 @@
 <line x1="633.3" y1="121.1" x2="633.3" y2="166.2"></line>
 <path d="M633.3,166.2c.2-3.2-4.6-6.3-8.9-6.3s-8.7,2.6-8.7,5.7,4.7,5.7,8.7,5.8S633.1,169.2,633.3,166.2Z"></path>
 </g>
-</g><g class="note" data-svg-origin="615.699951171875 119.9000015258789" transform="matrix(0,0,0,0,640.69995,119.9)" style="transform-origin: 0px 0px; opacity: 1; visibility: inherit; stroke: rgb(103, 181, 192);">
+</g><g class="note" data-svg-origin="615.699951171875 119.9000015258789" transform="matrix(0,0,0,0,615.69995,119.9)" style="transform-origin: 0px 0px; opacity: 1; visibility: inherit; stroke: rgb(165, 234, 155);">
 <g>
 <path d="M633.3,119.9c.6,2,1.3,3.5,3.8,6.3s5.2,4.3,6.5,7.2a6.9,6.9,0,0,1,.7,1.9,10.2,10.2,0,0,1-.7,6.6"></path>
 <path d="M633.3,119.9a23,23,0,0,0,2.4,11.7c2.4,4.3,5.1,5.4,6.8,9.5a16.9,16.9,0,0,1,.5,11"></path>
@@ -297,6 +386,17 @@
 <path d="M633.3,119.9a23,23,0,0,0,2.4,11.7c2.4,4.3,5.1,5.4,6.8,9.5a16.9,16.9,0,0,1,.5,11"></path>
 <line x1="633.3" y1="121.1" x2="633.3" y2="166.2"></line>
 <path d="M633.3,166.2c.2-3.2-4.6-6.3-8.9-6.3s-8.7,2.6-8.7,5.7,4.7,5.7,8.7,5.8S633.1,169.2,633.3,166.2Z"></path>
+</g>
+</g><g class="note" data-svg-origin="597.3999633789062 116.80000305175781" transform="matrix(0.97437,-0.22495,0.22495,0.97437,-34.9628,-74.62129)" style="transform-origin: 0px 0px; opacity: 0; visibility: hidden; stroke: rgb(253, 124, 110);">
+<g>
+<polyline points="614.8 155 614.8 116.8 647.5 124 647.5 162.9"></polyline>
+<path d="M614.8,155.7c0-3.1-4.4-5.7-8.2-5.9s-9.2,2.8-9.2,6,4.7,5.6,8.7,5.6S614.8,158.8,614.8,155.7Z"></path>
+<path d="M647.5,163.3c.1-3.1-4.4-5.7-8.2-5.9s-9.2,2.8-9.1,6,4.7,5.7,8.6,5.7S647.5,166.5,647.5,163.3Z"></path>
+</g>
+<g>
+<polyline points="614.8 155 614.8 116.8 647.5 124 647.5 162.9"></polyline>
+<path d="M614.8,155.7c0-3.1-4.4-5.7-8.2-5.9s-9.2,2.8-9.2,6,4.7,5.6,8.7,5.6S614.8,158.8,614.8,155.7Z"></path>
+<path d="M647.5,163.3c.1-3.1-4.4-5.7-8.2-5.9s-9.2,2.8-9.1,6,4.7,5.7,8.6,5.7S647.5,166.5,647.5,163.3Z"></path>
 </g>
 </g><g class="note" data-svg-origin="597.3999633789062 116.80000305175781" transform="matrix(0,0,0,0,594.39996,116.8)" style="transform-origin: 0px 0px; opacity: 1; visibility: inherit; stroke: rgb(165, 234, 155);">
 <g>
@@ -309,30 +409,19 @@
 <path d="M614.8,155.7c0-3.1-4.4-5.7-8.2-5.9s-9.2,2.8-9.2,6,4.7,5.6,8.7,5.6S614.8,158.8,614.8,155.7Z"></path>
 <path d="M647.5,163.3c.1-3.1-4.4-5.7-8.2-5.9s-9.2,2.8-9.1,6,4.7,5.7,8.6,5.7S647.5,166.5,647.5,163.3Z"></path>
 </g>
-</g><g class="note" data-svg-origin="597.3999633789062 116.80000305175781" transform="matrix(0.4302,-0.28403,0.28403,0.4302,275.47979,125.91515)" style="transform-origin: 0px 0px; opacity: 0.4845; visibility: inherit; stroke: rgb(165, 234, 155);">
-<g>
-<polyline points="614.8 155 614.8 116.8 647.5 124 647.5 162.9"></polyline>
-<path d="M614.8,155.7c0-3.1-4.4-5.7-8.2-5.9s-9.2,2.8-9.2,6,4.7,5.6,8.7,5.6S614.8,158.8,614.8,155.7Z"></path>
-<path d="M647.5,163.3c.1-3.1-4.4-5.7-8.2-5.9s-9.2,2.8-9.1,6,4.7,5.7,8.6,5.7S647.5,166.5,647.5,163.3Z"></path>
-</g>
-<g>
-<polyline points="614.8 155 614.8 116.8 647.5 124 647.5 162.9"></polyline>
-<path d="M614.8,155.7c0-3.1-4.4-5.7-8.2-5.9s-9.2,2.8-9.2,6,4.7,5.6,8.7,5.6S614.8,158.8,614.8,155.7Z"></path>
-<path d="M647.5,163.3c.1-3.1-4.4-5.7-8.2-5.9s-9.2,2.8-9.1,6,4.7,5.7,8.6,5.7S647.5,166.5,647.5,163.3Z"></path>
-</g>
-</g><g class="note" data-svg-origin="595.7986450195312 109.4000015258789" transform="matrix(0.93969,-0.34202,0.34202,0.93969,32.51563,4.37297)" style="transform-origin: 0px 0px; opacity: 0; visibility: hidden; stroke: rgb(163, 164, 236);">
+</g><g class="note" data-svg-origin="595.7986450195312 109.4000015258789" transform="matrix(0,0,0,0,615.79865,109.4)" style="transform-origin: 0px 0px; opacity: 1; visibility: inherit; stroke: rgb(165, 234, 155);">
 <polyline points="646.5 148.5 646.5 109.4 613.2 117.4 613.2 157.2"></polyline>
 <path d="M646.5,149c0-3.1-4.4-5.7-8.1-5.8s-9.2,2.7-9.1,5.9,4.7,5.6,8.6,5.6S646.5,152.1,646.5,149Z"></path>
 <path d="M613.2,156.7c.1-3.1-4.4-5.7-8.2-5.8s-9.3,2.7-9.2,6,4.7,5.6,8.7,5.6S613.2,159.9,613.2,156.7Z"></path>
 <line x1="613.2" y1="123.2" x2="646.5" y2="115.1"></line>
 <line x1="613.2" y1="129.4" x2="646.5" y2="121.8"></line>
-</g><g class="note" data-svg-origin="595.7986450195312 109.4000015258789" transform="matrix(0.40674,-0.91355,0.91355,0.40674,206.52113,395.1945)" style="transform-origin: 0px 0px; opacity: 0; visibility: hidden; stroke: rgb(253, 124, 110);">
+</g><g class="note" data-svg-origin="595.7986450195312 109.4000015258789" transform="matrix(0.44207,-0.75222,0.75222,0.44207,214.60297,327.7261)" style="transform-origin: 0px 0px; opacity: 0.1275; visibility: inherit; stroke: rgb(255, 97, 216);">
 <polyline points="646.5 148.5 646.5 109.4 613.2 117.4 613.2 157.2"></polyline>
 <path d="M646.5,149c0-3.1-4.4-5.7-8.1-5.8s-9.2,2.7-9.1,5.9,4.7,5.6,8.6,5.6S646.5,152.1,646.5,149Z"></path>
 <path d="M613.2,156.7c.1-3.1-4.4-5.7-8.2-5.8s-9.3,2.7-9.2,6,4.7,5.6,8.7,5.6S613.2,159.9,613.2,156.7Z"></path>
 <line x1="613.2" y1="123.2" x2="646.5" y2="115.1"></line>
 <line x1="613.2" y1="129.4" x2="646.5" y2="121.8"></line>
-</g><g class="note" data-svg-origin="619.0999755859375 106.5999984741211" transform="matrix(0,0,0,0,598.09998,106.6)" style="transform-origin: 0px 0px; opacity: 1; visibility: inherit; stroke: rgb(253, 124, 110);">
+</g><g class="note" data-svg-origin="619.0999755859375 106.5999984741211" transform="matrix(0.99619,0.08716,-0.08716,0.99619,-27.34997,-265.55461)" style="transform-origin: 0px 0px; opacity: 0; visibility: hidden; stroke: rgb(165, 234, 155);">
 <g>
 <path d="M636.6,152.9c0-3.2-4.4-5.8-8.2-5.9s-9.3,2.8-9.3,6,4.8,5.7,8.7,5.7S636.6,156.1,636.6,152.9Z"></path>
 <line x1="636.6" y1="152.9" x2="636.6" y2="106.6"></line>
@@ -343,7 +432,7 @@
 <line x1="636.6" y1="152.9" x2="636.6" y2="106.6"></line>
 <path d="M636.6,106.8a33.2,33.2,0,0,0,3.6,7.8c3.8,5.7,7.6,6.9,8.9,11.5a13.3,13.3,0,0,1-.9,8.4"></path>
 </g>
-</g><g class="note" data-svg-origin="619.0999755859375 106.5999984741211" transform="matrix(0.27834,0.09153,-0.09153,0.27834,489.35879,-43.02527)" style="transform-origin: 0px 0px; opacity: 0.707; visibility: inherit; stroke: rgb(165, 234, 155);">
+</g><g class="note" data-svg-origin="619.0999755859375 106.5999984741211" transform="matrix(0.77715,-0.62932,0.62932,0.77715,33.88092,201.36781)" style="transform-origin: 0px 0px; opacity: 0; visibility: hidden; stroke: rgb(253, 124, 110);">
 <g>
 <path d="M636.6,152.9c0-3.2-4.4-5.8-8.2-5.9s-9.3,2.8-9.3,6,4.8,5.7,8.7,5.7S636.6,156.1,636.6,152.9Z"></path>
 <line x1="636.6" y1="152.9" x2="636.6" y2="106.6"></line>
@@ -358,3 +447,127 @@
 </g>
 </svg>
 </div>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+<script id="rendered-js">
+// Inspired By
+// https://codepen.io/abeatrize/pen/LJqYey
+
+// Bongo Cat originally created by @StrayRogue and @DitzyFlama
+
+const ID = "bongo-cat";
+const s = selector => `#${ID} ${selector}`;
+const notes = document.querySelectorAll(".note");
+
+for (let note of notes) {
+  note.parentElement.appendChild(note.cloneNode(true));
+  note.parentElement.appendChild(note.cloneNode(true));
+}
+
+const music = { note: s(".music .note") };
+const terminal = { frame: s(".terminal-frame"), code: s(".terminal-code line") };
+const cat = {
+  pawRight: {
+    up: s(".paw-right .up"),
+    down: s(".paw-right .down") },
+
+  pawLeft: {
+    up: s(".paw-left .up"),
+    down: s(".paw-left .down") } };
+
+
+
+const style = getComputedStyle(document.documentElement);
+
+const green = style.getPropertyValue("--green");
+const pink = style.getPropertyValue("--pink");
+const blue = style.getPropertyValue("--blue");
+const orange = style.getPropertyValue("--orange");
+const cyan = style.getPropertyValue("--cyan");
+
+gsap.set(music.note, { scale: 0, autoAlpha: 1 });
+
+const animatePawState = (selector) =>
+gsap.fromTo(
+selector,
+{ autoAlpha: 0 },
+{
+  autoAlpha: 1,
+  duration: 0.01,
+  repeatDelay: 0.19,
+  yoyo: true,
+  repeat: -1 });
+
+
+
+const tl = gsap.timeline();
+
+tl.
+add(animatePawState(cat.pawLeft.up), "start").
+add(animatePawState(cat.pawRight.down), "start").
+add(animatePawState(cat.pawLeft.down), "start+=0.19").
+add(animatePawState(cat.pawRight.up), "start+=0.19").
+timeScale(1.6);
+
+gsap.from(".terminal-code line", {
+  drawSVG: "0%",
+  duration: 0.1,
+  stagger: 0.1,
+  ease: 'none',
+  repeat: -1 });
+
+
+const noteEls = gsap.utils.pipe(
+gsap.utils.toArray,
+gsap.utils.shuffle)(
+music.note);
+
+const numNotes = noteEls.length / 3;
+const notesG1 = noteEls.splice(0, numNotes);
+const notesG2 = noteEls.splice(0, numNotes);
+const notesG3 = noteEls;
+
+const colorizer = gsap.utils.random([green, pink, blue, orange, cyan, "#a3a4ec", "#67b5c0", "#fd7c6e"], true);
+const rotator = gsap.utils.random(-50, 50, 1, true);
+const dir = amt => `${gsap.utils.random(["-", "+"])}=${amt}`;
+
+const animateNotes = els => {
+  els.forEach(el => {
+    gsap.set(el, {
+      stroke: colorizer(),
+      rotation: rotator(),
+      x: gsap.utils.random(-25, 25, 1) });
+
+  });
+
+  return gsap.fromTo(els, {
+    autoAlpha: 1,
+    y: 0,
+    scale: 0 },
+  {
+    duration: 2,
+    autoAlpha: 0,
+    scale: 1,
+    ease: "none",
+    stagger: {
+      from: "random",
+      each: 0.5 },
+
+    rotation: dir(gsap.utils.random(20, 30, 1)),
+    x: dir(gsap.utils.random(40, 60, 1)),
+    y: gsap.utils.random(-200, -220, 1),
+    onComplete: () => animateNotes(els) });
+
+};
+
+tl.
+add(animateNotes(notesG1)).
+add(animateNotes(notesG2), ">0.05").
+add(animateNotes(notesG3), ">0.25");
+//# sourceURL=pen.js
+    </script>
+
+
+</body></html>
